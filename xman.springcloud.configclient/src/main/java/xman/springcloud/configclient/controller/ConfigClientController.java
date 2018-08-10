@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/configclient")
+@RequestMapping("/Configclient")
 @RestController
 public class ConfigClientController {
 
@@ -14,6 +14,15 @@ public class ConfigClientController {
 
 	@Value("${spring.cloud.test.testName}")
 	String appName;
+
+	@Value("staticvalue")
+	String staticValue;
+
+	@Value("combined '${appDesc}'value")
+	String combValue;
+
+	@Value("${xman.test.cofigserver.testdata}")
+	String testDatafromGit;
 
 	@GetMapping("/hi")
 	public String hi() {
