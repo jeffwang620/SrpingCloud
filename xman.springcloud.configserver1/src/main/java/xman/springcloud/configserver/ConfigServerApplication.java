@@ -1,4 +1,4 @@
-package xman.springcloud.configserver1.app;
+package xman.springcloud.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

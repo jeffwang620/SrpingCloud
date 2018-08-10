@@ -12,6 +12,9 @@ public class ConfigClientController {
 	@Value("${appDesc}") // git配置文件里的key
 	String appDesc;
 
+	@Value("${spring.cloud.test.testName}")
+	String appName;
+
 	@GetMapping("/hi")
 	public String hi() {
 		return appDesc;
